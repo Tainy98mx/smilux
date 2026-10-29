@@ -1,13 +1,15 @@
 import Header from './components/layout/header/Header';
+import Footer from './components/layout/footer/Footer';
 import HomePage from './pages/home/HomePage';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-sky-500 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-white">
       <Header />
-      <main>
+      <div className="flex-1">
         <HomePage />
-      </main>
+      </div>
+      <Footer />
     </div>
   );
 }

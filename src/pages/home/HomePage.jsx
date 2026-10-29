@@ -1,9 +1,13 @@
 import Hero from './components/Hero';
+import StatsBar from './components/StatsBar';
+import Services from './components/Services';
 
 export default function HomePage() {
   return (
-    <div className="w-full min-h-screen bg-slate-50">
+    <main>
       <Hero />
-    </div>
+      <StatsBar />
+      <Services />
+    </main>
   );
 }
